@@ -1,10 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ChevronRight, Phone, Mail, MapPin, Clock } from "lucide-react";
+import { ChevronRight, Phone, Mail, Clock } from "lucide-react";
 import ImageSlider from "@/components/ImageSlider";
 
 export default function Home() {
