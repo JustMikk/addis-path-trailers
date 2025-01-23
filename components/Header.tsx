@@ -1,42 +1,50 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import { motion, AnimatePresence } from "framer-motion"
-import { usePathname } from "next/navigation"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-  const pathname = usePathname()
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50)
-    }
+      setScrolled(window.scrollY > 50);
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Services", path: "/services" },
-    { name: "About Us", path: "/about" },
+    { name: "About Us", path: "/abouts" },
     { name: "Contact Us", path: "/contact" },
-  ]
+  ];
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "bg-white shadow-md" : "bg-transparent"}`}
+      className={`fixed w-full z-50 transition-all duration-300 ${
+        scrolled ? "bg-white shadow-md" : "bg-transparent"
+      }`}
     >
       <nav className="container mx-auto px-6 py-3">
         <div className="flex justify-between items-center">
           <Link
             href="/"
-            className="text-2xl font-bold text-primary-600 hover:text-primary-700 transition-colors duration-300"
+            className={`text-2xl font-bold hover:text-primary-700 transition-colors duration-300 ${
+              scrolled ? "text-primary-600" : "text-white"
+            }`}
           >
-            <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+            >
               Addis Path Trailer Leasing
             </motion.div>
           </Link>
@@ -53,12 +61,16 @@ const Header = () => {
                   className={`px-3 py-2 rounded-md text-lg font-medium relative ${
                     pathname === item.path
                       ? "text-primary-600"
-                      : `${scrolled ? "text-primary-600" : "text-white"} hover:text-primary-500`
+                      : `${
+                          scrolled ? "text-primary-600" : "text-white"
+                        } hover:text-primary-500`
                   } transition-all duration-300 group`}
                 >
                   {item.name}
                   <span
-                    className={`absolute bottom-0 left-0 w-full h-0.5 bg-primary-600 transform origin-left transition-all duration-300 ${pathname === item.path ? "scale-x-100" : "scale-x-0"} group-hover:scale-x-100`}
+                    className={`absolute bottom-0 left-0 w-full h-0.5 bg-primary-600 transform origin-left transition-all duration-300 ${
+                      pathname === item.path ? "scale-x-100" : "scale-x-0"
+                    } group-hover:scale-x-100`}
                   ></span>
                 </Link>
               </motion.div>
@@ -75,7 +87,12 @@ const Header = () => {
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           </button>
         </div>
@@ -107,8 +124,7 @@ const Header = () => {
         </AnimatePresence>
       </nav>
     </header>
-  )
-}
+  );
+};
 
-export default Header
-
+export default Header;

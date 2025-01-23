@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -6,16 +6,26 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-8">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
-            <h3 className="text-xl font-bold mb-2">Addis Path Trailer Leasing</h3>
-            <p className="text-sm text-primary-200">Reliable Dry Van Trailer Rental & Leasing Services</p>
+            <h3 className="text-xl font-bold mb-2">
+              Addis Path Trailer Leasing
+            </h3>
+            <p className="text-sm text-primary-200">
+              Reliable Dry Van Trailer Rental & Leasing Services
+            </p>
           </div>
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
-            <h4 className="text-lg font-semibold mb-2 text-primary-200">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-2 text-primary-200">
+              Quick Links
+            </h4>
             <ul className="space-y-2">
-              {["Home", "Services", "About Us", "Contact Us"].map((item) => (
+              {["Home", "Services", "Abouts", "Contact Us"].map((item) => (
                 <li key={item}>
                   <Link
-                    href={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "")}`}
+                    href={
+                      item === "Home"
+                        ? "/"
+                        : `/${item.toLowerCase().replace(" ", "")}`
+                    }
                     className="text-white hover:text-primary-300 transition-colors duration-300"
                   >
                     {item}
@@ -25,13 +35,21 @@ const Footer = () => {
             </ul>
           </div>
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
-            <h4 className="text-lg font-semibold mb-2 text-primary-200">Contact</h4>
-            <p className="text-sm text-white">Email: Info@AddisPathTrailer.com</p>
+            <h4 className="text-lg font-semibold mb-2 text-primary-200">
+              Contact
+            </h4>
+            <p className="text-sm text-white">
+              Email: Info@AddisPathTrailer.com
+            </p>
             <p className="text-sm text-white">Phone: +1 (414) 595-0096</p>
-            <p className="text-sm text-white">290 Jackson Place NW, Lilburn, GA 30047</p>
+            <p className="text-sm text-white">
+              290 Jackson Place NW, Lilburn, GA 30047
+            </p>
           </div>
           <div className="w-full md:w-1/4">
-            <h4 className="text-lg font-semibold mb-2 text-primary-200">Follow Us</h4>
+            <h4 className="text-lg font-semibold mb-2 text-primary-200">
+              Follow Us
+            </h4>
             <div className="flex space-x-4">
               {[
                 {
@@ -53,7 +71,12 @@ const Footer = () => {
                   className="text-white hover:text-primary-300 transition-colors duration-300"
                 >
                   <span className="sr-only">{social.name}</span>
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    className="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path d={social.icon} />
                   </svg>
                 </a>
@@ -63,13 +86,13 @@ const Footer = () => {
         </div>
         <div className="mt-8 text-center">
           <p className="text-sm text-white">
-            &copy; {new Date().getFullYear()} Addis Path Trailer Leasing. All rights reserved.
+            &copy; {new Date().getFullYear()} Addis Path Trailer Leasing. All
+            rights reserved.
           </p>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
-
+export default Footer;

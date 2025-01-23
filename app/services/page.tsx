@@ -1,6 +1,7 @@
-import Hero from "../components/Hero"
-import { motion } from "framer-motion"
-import Image from "next/image"
+"use client";
+import Hero from "@/components/Hero";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Services() {
   return (
@@ -11,17 +12,25 @@ export default function Services() {
       />
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <h2 className="text-4xl font-bold mb-8 text-center bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent">
               Dry Van Semi-Trailer Rentals and Leasing
             </h2>
             <p className="text-lg mb-8 text-gray-700 text-center max-w-3xl mx-auto">
-              Addis Path Trailer Leasing offers tailored trailer solutions for warehousing, logistics, retail, and more.
-              Our comprehensive services are designed to meet your specific needs and help your business thrive.
+              Addis Path Trailer Leasing offers tailored trailer solutions for
+              warehousing, logistics, retail, and more. Our comprehensive
+              services are designed to meet your specific needs and help your
+              business thrive.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               <div className="bg-gradient-to-br from-white to-primary-100 p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                <h3 className="text-2xl font-semibold mb-4 text-primary-700">Our Services Include:</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-primary-700">
+                  Our Services Include:
+                </h3>
                 <ul className="list-disc list-inside space-y-2 text-gray-700">
                   <li>Temporary storage solutions</li>
                   <li>Seasonal inventory overflow management</li>
@@ -32,11 +41,21 @@ export default function Services() {
                 </ul>
               </div>
               <div className="bg-gradient-to-br from-white to-primary-100 p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                <h3 className="text-2xl font-semibold mb-4 text-primary-700">Available Trailer Sizes:</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-primary-700">
+                  Available Trailer Sizes:
+                </h3>
                 <ul className="list-disc list-inside space-y-2 text-gray-700">
-                  <li>28' trailers - Perfect for urban deliveries and tight spaces</li>
-                  <li>40' trailers - Ideal for medium-sized loads and versatile applications</li>
-                  <li>53' trailers - Maximum capacity for long-haul transportation and large inventory</li>
+                  <li>
+                    28' trailers - Perfect for urban deliveries and tight spaces
+                  </li>
+                  <li>
+                    40' trailers - Ideal for medium-sized loads and versatile
+                    applications
+                  </li>
+                  <li>
+                    53' trailers - Maximum capacity for long-haul transportation
+                    and large inventory
+                  </li>
                 </ul>
               </div>
             </div>
@@ -54,32 +73,38 @@ export default function Services() {
                 {
                   name: "Retail/E-commerce",
                   icon: "🛍️",
-                  description: "Flexible solutions for inventory management and distribution.",
+                  description:
+                    "Flexible solutions for inventory management and distribution.",
                 },
                 {
                   name: "Logistics/Freight",
                   icon: "🚚",
-                  description: "Reliable trailers for efficient transportation and delivery.",
+                  description:
+                    "Reliable trailers for efficient transportation and delivery.",
                 },
                 {
                   name: "Manufacturing",
                   icon: "🏭",
-                  description: "Storage and transportation solutions for raw materials and finished goods.",
+                  description:
+                    "Storage and transportation solutions for raw materials and finished goods.",
                 },
                 {
                   name: "Food and Beverage",
                   icon: "🍽️",
-                  description: "Temperature-controlled options for perishable goods.",
+                  description:
+                    "Temperature-controlled options for perishable goods.",
                 },
                 {
                   name: "Construction",
                   icon: "🏗️",
-                  description: "Durable trailers for transporting equipment and materials.",
+                  description:
+                    "Durable trailers for transporting equipment and materials.",
                 },
                 {
                   name: "Automotive",
                   icon: "🚗",
-                  description: "Specialized trailers for vehicle parts and accessories.",
+                  description:
+                    "Specialized trailers for vehicle parts and accessories.",
                 },
               ].map((industry, index) => (
                 <div
@@ -87,7 +112,9 @@ export default function Services() {
                   className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 >
                   <div className="text-4xl mb-4">{industry.icon}</div>
-                  <h3 className="text-xl font-semibold mb-4 text-primary-700">{industry.name}</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-primary-700">
+                    {industry.name}
+                  </h3>
                   <p className="text-gray-600">{industry.description}</p>
                 </div>
               ))}
@@ -104,22 +131,26 @@ export default function Services() {
             {[
               {
                 title: "Flexibility",
-                description: "Customizable rental and leasing options to fit your specific needs.",
+                description:
+                  "Customizable rental and leasing options to fit your specific needs.",
                 icon: "🔄",
               },
               {
                 title: "Reliability",
-                description: "Well-maintained fleet ensuring minimal downtime and maximum efficiency.",
+                description:
+                  "Well-maintained fleet ensuring minimal downtime and maximum efficiency.",
                 icon: "🔧",
               },
               {
                 title: "Customer Support",
-                description: "24/7 assistance for all your trailer-related needs.",
+                description:
+                  "24/7 assistance for all your trailer-related needs.",
                 icon: "📞",
               },
               {
                 title: "Competitive Pricing",
-                description: "Cost-effective solutions without compromising on quality.",
+                description:
+                  "Cost-effective solutions without compromising on quality.",
                 icon: "💰",
               },
             ].map((feature, index) => (
@@ -131,7 +162,9 @@ export default function Services() {
                 className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
                 <div className="text-4xl mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold mb-4 text-primary-700">{feature.title}</h3>
+                <h3 className="text-xl font-semibold mb-4 text-primary-700">
+                  {feature.title}
+                </h3>
                 <p className="text-gray-600">{feature.description}</p>
               </motion.div>
             ))}
@@ -150,22 +183,27 @@ export default function Services() {
           <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-4xl font-bold mb-8 text-center text-white">Our Process</h2>
+          <h2 className="text-4xl font-bold mb-8 text-center text-white">
+            Our Process
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 title: "Consultation",
-                description: "We discuss your needs and recommend the best solutions.",
+                description:
+                  "We discuss your needs and recommend the best solutions.",
                 icon: "💬",
               },
               {
                 title: "Customization",
-                description: "We tailor our services to fit your specific requirements.",
+                description:
+                  "We tailor our services to fit your specific requirements.",
                 icon: "🔧",
               },
               {
                 title: "Delivery",
-                description: "We ensure timely delivery and setup of your rented or leased trailers.",
+                description:
+                  "We ensure timely delivery and setup of your rented or leased trailers.",
                 icon: "🚚",
               },
             ].map((step, index) => (
@@ -177,7 +215,9 @@ export default function Services() {
                 className="bg-white bg-opacity-90 p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
                 <div className="text-4xl mb-4">{step.icon}</div>
-                <h3 className="text-xl font-semibold mb-4 text-primary-700">{step.title}</h3>
+                <h3 className="text-xl font-semibold mb-4 text-primary-700">
+                  {step.title}
+                </h3>
                 <p className="text-gray-700">{step.description}</p>
               </motion.div>
             ))}
@@ -186,10 +226,13 @@ export default function Services() {
       </section>
       <section className="py-16 bg-primary-600">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-8 text-white">Ready to Get Started?</h2>
+          <h2 className="text-4xl font-bold mb-8 text-white">
+            Ready to Get Started?
+          </h2>
           <p className="text-lg mb-8 text-white max-w-3xl mx-auto">
-            Contact us today to discuss your trailer rental and leasing needs. Our team is ready to provide you with the
-            best solutions for your business.
+            Contact us today to discuss your trailer rental and leasing needs.
+            Our team is ready to provide you with the best solutions for your
+            business.
           </p>
           <a
             href="/contact"
@@ -200,6 +243,5 @@ export default function Services() {
         </div>
       </section>
     </div>
-  )
+  );
 }
-

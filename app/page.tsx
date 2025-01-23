@@ -314,7 +314,7 @@ export default function Home() {
                 trailer solutions to businesses across the Southeast.
               </p>
               <Link
-                href="/about"
+                href="/abouts"
                 className="text-primary-600 font-semibold hover:scale-110 transition-transform duration-300 inline-flex items-center"
               >
                 Learn More About Us <ChevronRight className="ml-1 h-4 w-4" />
