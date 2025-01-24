@@ -1,130 +1,117 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Menu, Phone } from "lucide-react";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
-const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+export function Header() {
   const pathname = usePathname();
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
-  const navItems = [
-    { name: "Home", path: "/" },
-    { name: "Services", path: "/services" },
-    { name: "About Us", path: "/abouts" },
-    { name: "Contact Us", path: "/contact" },
+  const navLinks = [
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About Us" },
+    { href: "/services", label: "Services" },
+    { href: "/blog", label: "Blog" },
+    { href: "/contact", label: "Contact Us" },
   ];
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md" : "bg-transparent"
+      className={`fixed top-0 z-50 w-full transition-colors duration-300 shadow-lg ${
+        isScrolled ? "bg-white text-gray-900" : "bg-transparent text-white"
       }`}
     >
-      <nav className="container mx-auto px-6 py-3">
-        <div className="flex justify-between items-center">
-          <Link
-            href="/"
-            className={`text-2xl font-bold hover:text-primary-700 transition-colors duration-300 ${
-              scrolled ? "text-primary-600" : "text-white"
-            }`}
-          >
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
+      <div className="container mx-auto flex h-16 items-center justify-between px-4 lg:px-12">
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/assets/images/logo.jpg"
+            alt="Logo"
+            width={60}
+            height={60}
+            className="h-10 w-10 md:h-12 md:w-12"
+          />
+          <span className="ml-2 text-lg font-bold">Addis path</span>
+        </Link>
+
+        <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`hover:text-blue-600 transition ${
+                pathname === link.href ? "text-blue-600 font-semibold" : ""
+              }`}
             >
-              Addis Path Trailer Leasing
-            </motion.div>
-          </Link>
-          <div className="hidden md:flex space-x-1">
-            {navItems.map((item, index) => (
-              <motion.div
-                key={item.name}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <Link
-                  href={item.path}
-                  className={`px-3 py-2 rounded-md text-lg font-medium relative ${
-                    pathname === item.path
-                      ? "text-primary-600"
-                      : `${
-                          scrolled ? "text-primary-600" : "text-white"
-                        } hover:text-primary-500`
-                  } transition-all duration-300 group`}
-                >
-                  {item.name}
-                  <span
-                    className={`absolute bottom-0 left-0 w-full h-0.5 bg-primary-600 transform origin-left transition-all duration-300 ${
-                      pathname === item.path ? "scale-x-100" : "scale-x-0"
-                    } group-hover:scale-x-100`}
-                  ></span>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-          <button
-            className="md:hidden text-primary-600 hover:text-primary-700 transition-colors duration-300"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+
+        <Sheet>
+          <SheetTrigger asChild>
+            <Button
+              variant="ghost"
+              className="md:hidden p-2"
+              aria-label="Open Menu"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
+              <Menu className="h-6 w-6" />
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="left" className="p-6">
+            <div className="flex items-center justify-between mb-6">
+              <Image
+                src="/assets/images/logo.jpg"
+                alt="Logo"
+                width={50}
+                height={50}
+                className="h-10 w-10"
               />
-            </svg>
-          </button>
-        </div>
-        <AnimatePresence>
-          {isOpen && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.3 }}
-              className="md:hidden mt-4 space-y-2"
-            >
-              {navItems.map((item) => (
+            </div>
+            <nav className="space-y-6">
+              {navLinks.map((link) => (
                 <Link
-                  key={item.name}
-                  href={item.path}
-                  className={`block px-3 py-2 rounded-md text-lg font-medium ${
-                    pathname === item.path
-                      ? "bg-primary-100 text-primary-600"
-                      : "text-primary-600 hover:bg-primary-50 hover:text-primary-500"
-                  } transition-all duration-300`}
-                  onClick={() => setIsOpen(false)}
+                  key={link.href}
+                  href={link.href}
+                  className={`block text-lg font-medium hover:text-blue-600 ${
+                    pathname === link.href ? "text-blue-600 font-semibold" : ""
+                  }`}
                 >
-                  {item.name}
+                  {link.label}
                 </Link>
               ))}
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </nav>
+            </nav>
+          </SheetContent>
+        </Sheet>
+
+        <div className="hidden md:flex items-center space-x-6">
+          <div className="flex items-center space-x-2">
+            <Phone className="h-5 w-5 text-blue-600" />
+            <span className="text-sm">123 456 789</span>
+          </div>
+          <Button
+            variant="outline"
+            className="border-blue-600 text-blue-600 hover:bg-blue-100"
+          >
+            <Link href="/contact">Contact Us</Link>
+          </Button>
+        </div>
+      </div>
     </header>
   );
-};
-
-export default Header;
+}
