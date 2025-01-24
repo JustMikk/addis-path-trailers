@@ -106,7 +106,11 @@ export function Header() {
           </div>
           <Button
             variant="outline"
-            className="border-blue-600 text-blue-600 hover:bg-blue-100"
+            className={`border-blue-600 text-blue-600 hover:bg-blue-100 ${
+              isScrolled
+                ? "bg-white text-gray-900"
+                : "bg-transparent text-white"
+            } `}
           >
             <Link href="/contact">Contact Us</Link>
           </Button>
