@@ -1,13 +1,13 @@
-import Link from "next/link"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 interface HeroProps {
-  title: string
-  subtitle?: string
-  backgroundImage: string
-  showButton?: boolean
-  buttonText?: string
-  buttonLink?: string
+  title: string;
+  subtitle?: string;
+  backgroundImage: string;
+  showButton?: boolean;
+  buttonText?: string;
+  buttonLink?: string;
 }
 
 const Hero = ({
@@ -63,8 +63,7 @@ const Hero = ({
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
-
+export default Hero;
