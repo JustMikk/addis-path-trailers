@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import { useRouter } from "next/navigation";
 
 const cards = [
   {
@@ -41,6 +42,7 @@ const cards = [
 ];
 
 const TrailerRentalSection: React.FC = () => {
+  const router = useRouter();
   return (
     <section className="py-16 px-6 sm:px-12 lg:px-20 bg-gradient-to-b from-blue-50 to-white">
       <motion.div
@@ -104,7 +106,12 @@ const TrailerRentalSection: React.FC = () => {
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
         className="text-center mt-12"
       >
-        <Button className="px-8 py-3 text-lg bg-gradient-to-r from-blue-600 to-blue-800 text-white font-semibold rounded-lg shadow-md hover:from-blue-700 hover:to-blue-900">
+        <Button
+          onClick={() => {
+            router.push("services");
+          }}
+          className="px-8 py-3 text-lg bg-gradient-to-r from-blue-600 to-blue-800 text-white font-semibold rounded-lg shadow-md hover:from-blue-700 hover:to-blue-900"
+        >
           Explore More
         </Button>
       </motion.div>

@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Truck, CheckCircle, Users, LucideIcon } from "lucide-react";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 interface LeasingCardProps {
   title: string;
@@ -16,6 +17,7 @@ export default function LeasingCard({
   description,
   icon,
 }: LeasingCardProps) {
+  const router = useRouter();
   return (
     <motion.div
       className="max-w-md "
@@ -50,7 +52,12 @@ export default function LeasingCard({
           <p className="text-gray-800 font-medium mb-4">
             Let us help you find the right solution for your business.
           </p>
-          <Button className="bg-gradient-to-r from-blue-600 to-blue-800 text-white font-semibold px-6 py-2 rounded-lg shadow-lg hover:from-blue-700 hover:to-blue-900">
+          <Button
+            onClick={() => {
+              router.push("/contact");
+            }}
+            className="bg-gradient-to-r from-blue-600 to-blue-800 text-white font-semibold px-6 py-2 rounded-lg shadow-lg hover:from-blue-700 hover:to-blue-900"
+          >
             Contact Us Today
           </Button>
         </div>
