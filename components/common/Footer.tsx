@@ -6,7 +6,6 @@ const Footer = () => {
     <footer className="bg-gradient-to-r from-gray-800 to-gray-900 text-white">
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Company Info */}
           <div>
             <h3 className="text-2xl font-bold mb-4">
               Addis Path Trailer Leasing
@@ -16,7 +15,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="text-lg font-semibold mb-4 text-gray-400">
               Quick Links
@@ -39,7 +37,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div>
             <h4 className="text-lg font-semibold mb-4 text-gray-400">
               Contact
@@ -56,7 +53,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter Signup */}
           <div>
             <h4 className="text-lg font-semibold mb-4 text-gray-400">
               Newsletter
@@ -80,7 +76,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Social Media & Copyright */}
         <div className="mt-12 border-t border-gray-700 pt-6 text-center">
           <div className="flex justify-center space-x-4 mb-4">
             {[

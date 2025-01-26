@@ -1,17 +1,19 @@
 "use client";
 
-import Image from "next/image";
+import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ChevronRight, Phone, Mail, Clock, ChevronLeft } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { industries } from "@/constants";
 
-import WhyChooseUs from "@/components/WhyChooseUs";
-import HeroSection from "@/components/HeroSection";
-import TrailerRentalSection from "@/components/TrailerRentalSection";
-import { useState } from "react";
+import { Phone, Mail, Clock } from "lucide-react";
+
+import { industries } from "@/constants";
+import VailableCard from "@/components/Home/VailableCards";
+import AboutSection from "@/components/Home/WhyChooseUs";
+import HeroSection from "@/components/Home/HeroSection";
+import { OurService } from "@/components/OurServices";
+import { Banner } from "@/components/common/Banner";
+
+import { ServiceSection } from "@/components/Home/ServiceSection";
 
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -30,10 +32,12 @@ export default function Home() {
   return (
     <div className="relative">
       <HeroSection />
-      <WhyChooseUs />
-      <TrailerRentalSection />
+      <VailableCard />
+      <AboutSection />
+      <ServiceSection />
+      <OurService />
+      <Banner />
 
-      {/* Contact Information Preview */}
       <section className="py-20 bg-gradient-to-b from-primary-50 to-white">
         <div className="container mx-auto px-4">
           <motion.div

@@ -20,11 +20,11 @@ export default function LeasingCard({
   const router = useRouter();
   return (
     <motion.div
-      className="max-w-md "
-      whileHover={{ scale: 1.05 }}
+      className="max-w-md z-20"
+      whileHover={{ scale: 0.95 }}
       transition={{ duration: 0.3 }}
     >
-      <Card className=" shadow-xl rounded-2xl p-6 border border-gray-200">
+      <Card className=" shadow-md rounded-xl  border border-gray-200">
         <CardHeader>
           <div className="flex items-center space-x-4">
             <div className="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full text-blue-600 shadow-inner">
@@ -42,13 +42,12 @@ export default function LeasingCard({
                 key={index}
                 className="flex items-center space-x-3 bg-gray-50 rounded-lg p-3 shadow-sm"
               >
-                <CheckCircle className="w-6 h-6 text-green-500" />
                 <p className="text-gray-700 text-sm font-medium">{desc}</p>
               </div>
             ))}
           </div>
         </CardContent>
-        <div className="mt-6 text-center">
+        {/* <div className="mt-6 text-center">
           <p className="text-gray-800 font-medium mb-4">
             Let us help you find the right solution for your business.
           </p>
@@ -60,7 +59,7 @@ export default function LeasingCard({
           >
             Contact Us Today
           </Button>
-        </div>
+        </div> */}
       </Card>
     </motion.div>
   );

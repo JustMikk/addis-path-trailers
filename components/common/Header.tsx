@@ -35,7 +35,7 @@ export function Header() {
       className={`fixed top-0 z-50 w-full transition-colors duration-300  ${
         isScrolled
           ? "bg-white text-gray-900 shadow-lg"
-          : "bg-transparent text-white"
+          : "bg-transparent border-b border-white/10 text-white"
       }`}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 lg:px-12">
