@@ -63,16 +63,16 @@ const features = [
 ];
 
 const stats = [
-  { value: "10K+", label: "Versatile Trailers Available" },
-  { value: "98.5%", label: "Customer Satisfaction Rate" },
-  { value: "15K+", label: "Successful Rentals & Leases" },
+  { value: "24/7", label: "Customer Support" },
+  { value: "100%", label: "Commitment to Quality" },
+  { value: "Tailored", label: "Rental Solutions" },
 ];
 
 const additionalFeatures = [
-  "24/7 Roadside Assistance",
   "Flexible Rental & Leasing Terms",
   "Custom Trailer Configurations",
-  "Dedicated Account Management",
+  "cost-effective solutions",
+  "weatherproof storage",
 ];
 
 export function OurService() {
@@ -99,7 +99,7 @@ export function OurService() {
           >
             We offer exceptional services and solutions designed to meet your
             needs. With a focus on quality and customer satisfaction, we are
-            here to help you achieve your goals.
+            here to help you achieve your goals. Our trailers are ideal for:
           </motion.p>
         </div>
 

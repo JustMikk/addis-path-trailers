@@ -34,7 +34,9 @@ export function Banner() {
         >
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-6">
             Your Trusted Partner in{" "}
-            <span className="text-blue-400">Transport Solutions</span>
+            <span className="text-blue-400">
+              Transport and Storage Solutions
+            </span>
           </h1>
           <p className="text-lg sm:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
             We provide secure, reliable, and versatile dry van semi-trailers for

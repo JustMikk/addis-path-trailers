@@ -45,13 +45,13 @@ export function Header() {
         <div className=" flex h-16 items-center justify-between ">
           <Link href="/" className="flex items-center">
             <Image
-              src="/assets/images/logo.jpg"
+              src="/assets/images/logo-sticker.png"
               alt="Logo"
-              width={60}
-              height={60}
-              className="h-10 w-10 md:h-12 md:w-12"
+              width={200}
+              height={200}
+              className="h-24 w-24 md:h-28 md:w-28"
             />
-            <span className="ml-2 text-lg font-bold">Addis path</span>
+            {/* <span className="ml-2 text-lg font-bold">Addis path</span> */}
           </Link>
 
           <nav className="hidden lg:flex items-center space-x-8 text-sm font-medium">
@@ -81,11 +81,11 @@ export function Header() {
             <SheetContent side="left" className="p-6">
               <div className="flex items-center justify-between mb-6">
                 <Image
-                  src="/assets/images/logo.jpg"
+                  src="/assets/images/logo-sticker.png"
                   alt="Logo"
-                  width={50}
-                  height={50}
-                  className="h-10 w-10"
+                  width={200}
+                  height={200}
+                  className="h-24 w-24"
                 />
               </div>
               <nav className="space-y-6">
@@ -109,7 +109,7 @@ export function Header() {
           <div className="hidden lg:flex items-center space-x-6">
             <div className="flex items-center space-x-2">
               <Phone className="h-5 w-5 text-blue-600" />
-              <span className="text-sm">123 456 789</span>
+              <span className="text-sm">+1 (414) 595-0096</span>
             </div>
             <Button
               variant="outline"

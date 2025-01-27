@@ -190,8 +190,8 @@ export function ContactForm() {
                     <Phone className="w-6 h-6 text-blue-600 mt-1" />
                     <div>
                       <h3 className="font-bold mb-2">Phone Number</h3>
-                      <p className="text-gray-300">+1(888) 123-5678</p>
-                      <p className="text-gray-300">(+44)123 456 789</p>
+                      <p className="text-gray-300">+1 (414) 595-0096</p>
+                      {/* <p className="text-gray-300">(+44)123 456 789</p> */}
                     </div>
                   </div>
 
@@ -199,8 +199,10 @@ export function ContactForm() {
                     <Mail className="w-6 h-6 text-blue-600 mt-1" />
                     <div>
                       <h3 className="font-bold mb-2">Email Address</h3>
-                      <p className="text-gray-300">info@adddispath.com</p>
-                      <p className="text-gray-300">contact@addisPath.com</p>
+                      <p className="text-gray-300">
+                        info@adddispathtrailers.com
+                      </p>
+                      {/* <p className="text-gray-300">contact@addisPath.com</p> */}
                     </div>
                   </div>
 
@@ -209,9 +211,9 @@ export function ContactForm() {
                     <div>
                       <h3 className="font-bold mb-2">Location</h3>
                       <p className="text-gray-300">
-                        Guild Street 51, North Town,
+                        290 Jackson Place NW,
                         <br />
-                        London-06192, UK
+                        Lilburn, GA 30047
                       </p>
                     </div>
                   </div>

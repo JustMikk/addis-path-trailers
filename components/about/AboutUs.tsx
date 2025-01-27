@@ -66,7 +66,7 @@ const AboutSection = () => {
                 About <span className="text-blue-600">AddisPath</span>
               </h1>
               <h2 className="text-xl md:text-2xl font-medium text-gray-600 mb-4">
-                Family-Owned, Focused on Excellence
+                Customer-Oriented, Focused on Excellence
               </h2>
             </motion.div>
 
@@ -77,12 +77,11 @@ const AboutSection = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              AddisPath is a family-owned business dedicated to providing
-              high-quality trailer rental and leasing services. We specialize in
-              versatile and cost-effective{" "}
-              <strong>dry van semi-trailers</strong>, offering tailored
-              solutions to meet the diverse transport and storage needs of
-              individuals and businesses alike.
+              AddisPath is a rental business dedicated to providing high-quality
+              trailer rental and leasing services. We specialize in versatile
+              and cost-effective <strong>dry van semi-trailers</strong>,
+              offering tailored solutions to meet the diverse transport and
+              storage needs of individuals and businesses alike.
             </motion.p>
 
             <motion.div

@@ -10,23 +10,6 @@ export default function InfoSection() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="bg-blue-50 rounded-lg p-6"
-            >
-              <h3 className="text-blue-600 text-xl font-semibold mb-4">
-                Our Vision
-              </h3>
-              <p className="text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus sapiente tempora fugit necessitatibus amet temporibus.
-                Quidem amet perspiciatis libero vel earum ut unde reiciendis
-                debitis nulla soluta qui, molestias rem.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               className="bg-blue-50 rounded-lg p-6"
             >
@@ -34,10 +17,26 @@ export default function InfoSection() {
                 Our Mission
               </h3>
               <p className="text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus sapiente tempora fugit necessitatibus amet temporibus.
-                Quidem amet perspiciatis libero vel earum ut unde reiciendis
-                debitis nulla soluta qui, molestias rem.
+                Our mission is to empower businesses by delivering
+                cost-effective, reliable, and high-quality dry van trailer
+                rental and leasing services while fostering sustainable
+                practices and contributing to local economic growth.
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="bg-blue-50 rounded-lg p-6"
+            >
+              <h3 className="text-blue-600 text-xl font-semibold mb-4">
+                Our Vision
+              </h3>
+              <p className="text-gray-600">
+                Our aim is to delivering outstanding service and innovative,
+                customer-centric solutions. We focus on fostering lasting client
+                relationships while expanding our reach and upholding high
+                service standards.
               </p>
             </motion.div>
 
@@ -47,12 +46,15 @@ export default function InfoSection() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="bg-blue-50 rounded-lg p-6 text-blue-600"
             >
-              <h3 className="text-xl font-semibold mb-4">Our History</h3>
+              <h3 className="text-xl font-semibold mb-4">Our Values</h3>
               <p className="text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus sapiente tempora fugit necessitatibus amet temporibus.
-                Quidem amet perspiciatis libero vel earum ut unde reiciendis
-                debitis nulla soluta qui, molestias rem.
+                <b>Trust</b>: We prioritize transparency and integrity, ensuring
+                dependable rental experiences.
+                <br /> <b>Reliability</b>: Our well-maintained trailers and
+                timely services guarantee consistent quality. <br />
+                <b>Customer Satisfaction</b>: We focus on understanding customer
+                needs and delivering tailored solutions that exceed
+                expectations.
               </p>
             </motion.div>
           </div>
@@ -70,13 +72,14 @@ export default function InfoSection() {
             <div className="absolute inset-0 bg-gray-900/80"></div>
             <div className="z-10 relative">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
-                Lorem ipsum dolor sit amet consectetur adipisicing
+                Our Mission, Vision, and Values
               </h2>
               <p className="text-gray-300 mb-8">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus sapiente tempora fugit necessitatibus amet temporibus.
-                Quidem amet perspiciatis libero vel earum ut unde reiciendis
-                debitis nulla soluta qui, molestias rem.
+                At AddisPath, our mission is to provide exceptional rental
+                services that exceed customer expectations. Our vision is to be
+                the leading rental service provider known for our reliability
+                and customer-centric approach. We value integrity, excellence,
+                and a commitment to continuous improvement in all that we do.
               </p>
               <Button
                 variant="secondary"

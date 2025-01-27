@@ -17,7 +17,7 @@ export function AboutAddis() {
           >
             <div className="grid grid-cols-2 gap-4">
               <Image
-                src="/assets/images/about.jpg"
+                src="/assets/images/truck.jpg"
                 alt="Professional team"
                 width={700}
                 height={500}
@@ -72,7 +72,7 @@ export function AboutAddis() {
 
             <div>
               <Button className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300">
-                <Link href="/about">Learn More About Us</Link>
+                <Link href="/contact">Contact Us for more</Link>
               </Button>
             </div>
           </motion.div>
