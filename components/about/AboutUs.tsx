@@ -129,14 +129,6 @@ const AboutSection = () => {
                 size="lg"
                 className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700"
               >
-                <Link href="/about">Learn More About Us</Link>
-              </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="w-full sm:w-auto border border-blue-600 text-blue-700"
-              >
                 <Link href="/contact">Contact Us</Link>
               </Button>
             </motion.div>

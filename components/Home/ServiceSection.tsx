@@ -6,7 +6,7 @@ export function ServiceSection() {
   return (
     <section className="py-12 bg-gray-50">
       <div
-        className="mx-auto px-4 md:px-12 lg:px-16 lg:max-w-[1440px]
+        className="mx-auto p-6 px-4 md:px-12 lg:px-16 lg:max-w-[1440px]
 "
       >
         <motion.div

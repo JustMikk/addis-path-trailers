@@ -6,7 +6,7 @@ import Link from "next/link";
 const HeroSection = () => {
   return (
     <section
-      className="relative h-[70vh] lg:h-screen flex items-center justify-start text-left  overflow-hidden"
+      className="relative text-left  overflow-hidden"
       style={{
         backgroundImage: "url('/assets/images/hero.jpg')",
         backgroundSize: "cover",
@@ -18,10 +18,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-blue-700/50 via-black/50 to-black/70"></div>
 
       <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-blue-500 opacity-10 rounded-full blur-3xl"></div>
-      <div
-        className="mx-auto items-start px-4 md:px-12 lg:px-16 lg:max-w-[1440px]
-"
-      >
+      <div className="mx-auto px-4 md:px-12 lg:px-16 lg:max-w-[1440px] h-[70vh] lg:h-screen flex items-center">
         <motion.div
           className="relative z-10 max-w-4xl"
           initial={{ opacity: 0, y: 20 }}

@@ -39,10 +39,10 @@ export function Header() {
       }`}
     >
       <div
-        className="mx-auto px-4 md:px-24 lg:px-36 lg:max-w-[1440px]
+        className="mx-auto px-4 md:px-12 lg:px-16 lg:max-w-[1440px]
 "
       >
-        <div className="container mx-auto flex h-16 items-center justify-between p-6">
+        <div className=" flex h-16 items-center justify-between ">
           <Link href="/" className="flex items-center">
             <Image
               src="/assets/images/logo.jpg"
