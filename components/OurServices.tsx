@@ -77,8 +77,8 @@ const additionalFeatures = [
 
 export function OurService() {
   return (
-    <section className="py-16 px-4 md:px-16">
-      <div className="container">
+    <section className="py-10 md:py-20 lg:py-36">
+      <div className="container mx-auto px-4 md:px-12 lg:px-16 lg:max-w-[1440px]">
         <div className="text-left mb-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

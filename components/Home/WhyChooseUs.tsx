@@ -26,8 +26,11 @@ const features = [
 
 const AboutSection = () => {
   return (
-    <section className="px-6 md:px-16 py-16">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-10 md:py-20 lg:py-36">
+      <div
+        className="mx-auto px-4 md:px-12 lg:px-16 lg:max-w-[1440px]
+"
+      >
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
             className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl order-1 md:order-none"

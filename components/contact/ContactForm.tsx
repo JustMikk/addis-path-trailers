@@ -50,8 +50,8 @@ export function ContactForm() {
   }
 
   return (
-    <section className="py-12 md:py-32 px-4 md:px-6 lg:px-8 bg-white ">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-12 md:py-32 bg-white ">
+      <div className=" mx-auto px-4 md:px-12 lg:px-16 lg:max-w-[1440px]">
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <div className="mb-8">

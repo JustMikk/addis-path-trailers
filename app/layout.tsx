@@ -1,9 +1,12 @@
 import { Header } from "@/components/common/Header";
 import "./globals.css";
-import { Space_Grotesk } from "next/font/google";
-import Footer from "@/components/common/Footer";
 
-const space = Space_Grotesk({ subsets: ["latin"] });
+import Footer from "@/components/common/Footer";
+import { Space_Grotesk } from "next/font/google";
+
+const space = Space_Grotesk({
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Addis Path Trailer Leasing",
