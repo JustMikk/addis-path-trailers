@@ -19,7 +19,7 @@ export function ServiceCard({
   image,
 }: ServiceCardProps) {
   return (
-    <Card className="group relative overflow-hidden h-[400px] min-w-[300px] flex-shrink-0 cursor-pointer">
+    <Card className="group relative overflow-hidden h-[400px] max-w-[500px] flex-shrink-0 cursor-pointer">
       <Image
         src={image || "/placeholder.svg"}
         alt={title}
@@ -39,11 +39,6 @@ export function ServiceCard({
             <p className="text-white/80 text-sm transform translate-y-full opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
               {description}
             </p>
-            <button className="text-white text-sm mt-2 hover:underline transform translate-y-full opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-              <Link href="/services" className="text-blue-500">
-                Read More
-              </Link>
-            </button>
           </div>
         </div>
       </div>

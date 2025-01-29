@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 
 import { Separator } from "@/components/ui/separator";
+import Image from "next/image";
 
 const quickLinks = [
   { name: "Home", href: "/" },
@@ -65,12 +66,18 @@ const socialLinks = [
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white">
-      {/* Main Footer Content */}
       <div className="container  mx-auto px-4 md:px-12 lg:px-16 lg:max-w-[1440px] py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">Addis Path Trailer Leasing</h3>
+            <div>
+              <Image
+                src="/logo.png"
+                alt="Logo"
+                width={200}
+                height={200}
+                className="h-24 w-24 md:h-28 md:w-28"
+              />
+            </div>
             <p className="text-gray-300 leading-relaxed">
               Your trusted partner in dry van trailer rental and leasing
               services. Providing reliable solutions for your transportation

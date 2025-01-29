@@ -44,14 +44,23 @@ export function Header() {
       >
         <div className=" flex h-16 items-center justify-between ">
           <Link href="/" className="flex items-center">
-            <Image
-              src="/assets/images/logo-sticker.png"
-              alt="Logo"
-              width={200}
-              height={200}
-              className="h-24 w-24 md:h-28 md:w-28"
-            />
-            {/* <span className="ml-2 text-lg font-bold">Addis path</span> */}
+            {isScrolled ? (
+              <Image
+                src="/assets/images/logo-sticker.png"
+                alt="Logo"
+                width={200}
+                height={200}
+                className="h-24 w-24 md:h-28 md:w-28"
+              />
+            ) : (
+              <Image
+                src="/logo.png"
+                alt="Logo"
+                width={200}
+                height={200}
+                className="h-24 w-24 md:h-28 md:w-28"
+              />
+            )}
           </Link>
 
           <nav className="hidden lg:flex items-center space-x-8 text-sm font-medium">
