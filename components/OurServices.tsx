@@ -4,6 +4,7 @@ import {
   MoreHorizontal,
   Calendar,
   Truck,
+  ArrowBigRight,
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
@@ -63,9 +64,9 @@ const features = [
 ];
 
 const stats = [
-  { value: "24/7", label: "Customer Support" },
-  { value: "100%", label: "Commitment to Quality" },
   { value: "Tailored", label: "Rental Solutions" },
+  { value: "Multiple", label: "Sizes available" },
+  { value: "100%", label: "Commitment to Quality" },
 ];
 
 const additionalFeatures = [
@@ -90,6 +91,17 @@ export function OurService() {
             Services
             <span className="text-blue-600"> Offered</span>
           </motion.h2>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6 tracking-tight flex"
+          >
+            {" "}
+            <ArrowBigRight className="h-8 w-8 text-blue-600 mr-3" />
+            Dry Van Semi-Trailer Rentals and Leasing
+          </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -97,9 +109,9 @@ export function OurService() {
             viewport={{ once: true }}
             className="text-gray-600 mb-8 max-w-2xl text-lg"
           >
-            We offer exceptional services and solutions designed to meet your
-            needs. With a focus on quality and customer satisfaction, we are
-            here to help you achieve your goals. Our trailers are ideal for:
+            We Provide secure and versatile dry van trailers designed to meet a
+            variety of needs across industries. While primarily used for cargo
+            transport, our trailers are also ideal for:
           </motion.p>
         </div>
 
@@ -133,7 +145,7 @@ export function OurService() {
               ))}
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               variants={itemVariants}
               className="bg-white p-6 rounded-lg"
             >
@@ -152,13 +164,13 @@ export function OurService() {
                   </motion.li>
                 ))}
               </ul>
-            </motion.div>
+            </motion.div> */}
           </div>
 
           <motion.div variants={imageVariants} className="relative">
             <div className="relative rounded-md overflow-hidden shadow-xl">
               <Image
-                src="/assets/images/hero.jpg"
+                src="/assets/images/trailers.png"
                 alt="Our services in action"
                 width={800}
                 height={600}
@@ -192,6 +204,30 @@ export function OurService() {
               </motion.div>
             </div>
           </motion.div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="mt-12"
+        >
+          <ul className="list-disc list-inside text-lg text-gray-600 space-y-8">
+            <li>
+              <span className="font-semibold text-blue-600">Flexible</span>: Our
+              rental and leasing options are flexible, accommodating both
+              short-term and long-term requirements to suit your business or
+              personal needs.
+            </li>
+            <li>
+              <span className="font-semibold text-blue-600">
+                Available sizes
+              </span>
+              : 28’, 40’, and 53’, ensuring a perfect fit for a wide range of
+              load capacities and purposes, available with roll-up or swing
+              doors for easy loading and unloading.
+            </li>
+          </ul>
         </motion.div>
       </div>
     </section>

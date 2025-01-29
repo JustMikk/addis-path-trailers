@@ -1,7 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { TruckIcon, DollarSignIcon, ClockIcon } from "lucide-react";
+import {
+  TruckIcon,
+  DollarSignIcon,
+  ClockIcon,
+  MemoryStickIcon,
+  StoreIcon,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
@@ -9,19 +15,19 @@ import { motion } from "framer-motion";
 const features = [
   {
     icon: TruckIcon,
-    title: "Dry Van Semi-Trailers",
-    description: "Specializing in versatile and reliable transport solutions",
+    title: "Transportation",
+    description: "When you are transporting goods across town.",
   },
   {
-    icon: DollarSignIcon,
-    title: "Cost-Effective",
-    description: "Flexible pricing options to suit your budget",
+    icon: StoreIcon,
+    title: "Storage",
+    description: "When you need a secure place to store your goods.",
   },
-  {
-    icon: ClockIcon,
-    title: "24/7 Support",
-    description: "Round-the-clock assistance for your peace of mind",
-  },
+  // {
+  //   icon: ClockIcon,
+  //   title: "24/7 Support",
+  //   description: "Round-the-clock assistance for your peace of mind",
+  // },
 ];
 
 const AboutSection = () => {
@@ -40,7 +46,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
           >
             <Image
-              src="/assets/images/about.jpg"
+              src="/assets/images/trailer-11.png"
               alt="Dry Van Semi-Trailers"
               fill
               className="object-cover"
@@ -77,11 +83,12 @@ const AboutSection = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              AddisPath is a rental business dedicated to providing high-quality
-              trailer rental and leasing services. We specialize in versatile
-              and cost-effective <strong>dry van semi-trailers</strong>,
-              offering tailored solutions to meet the diverse transport and
-              storage needs of individuals and businesses alike.
+              AddisPath is a family owned business dedicated to providing
+              high-quality trailer rental and leasing services. We specialize in
+              versatile and cost-effective{" "}
+              <strong>dry van semi-trailers</strong>, offering tailored
+              solutions to meet the diverse transport and storage needs of
+              individuals and businesses alike.
             </motion.p>
 
             <motion.div

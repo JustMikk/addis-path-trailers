@@ -18,8 +18,8 @@ const features = [
     icon: Shield,
   },
   {
-    title: "Customer Support",
-    description: "24/7 assistance for all your trailer-related needs.",
+    title: "Exceptional Support",
+    description: "A dedicated team ready to assist every step of the way.",
     icon: HeadphonesIcon,
   },
   {

@@ -5,15 +5,15 @@ import { motion } from "framer-motion";
 import { CheckCircle, Target, Users } from "lucide-react";
 
 import AboutSection from "@/components/about/AboutUs";
-import { AboutAddis } from "@/components/about/AboutAddis";
 import InfoSection from "@/components/about/InfoSection";
+import AboutAddis from "@/components/about/AboutAddis";
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-blue-50">
       <section className="relative h-[60vh] flex items-center justify-center">
         <Image
-          src="/assets/images/hero.jpg"
+          src="/assets/images/trailers.png"
           alt="Hero background"
           layout="fill"
           objectFit="cover"
@@ -26,7 +26,7 @@ export default function AboutPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            About Our Company
+            About Us
           </motion.h1>
           <motion.p
             className="text-xl"

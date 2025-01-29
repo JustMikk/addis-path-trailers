@@ -33,10 +33,13 @@ export default function InfoSection() {
                 Our Vision
               </h3>
               <p className="text-gray-600">
-                Our aim is to delivering outstanding service and innovative,
-                customer-centric solutions. We focus on fostering lasting client
-                relationships while expanding our reach and upholding high
-                service standards.
+                Our goal is to become the leading provider of trailer rentals
+                and leasing in the Southeastern United States, offering
+                exceptional service, innovative solutions, and a
+                customer-focused approach that distinguishes us from
+                competitors. We strive to build long-lasting relationships with
+                our clients and continuously expand our reach while maintaining
+                the highest standards of service.
               </p>
             </motion.div>
 
@@ -48,13 +51,21 @@ export default function InfoSection() {
             >
               <h3 className="text-xl font-semibold mb-4">Our Values</h3>
               <p className="text-gray-600">
-                <b>Trust</b>: We prioritize transparency and integrity, ensuring
-                dependable rental experiences.
-                <br /> <b>Reliability</b>: Our well-maintained trailers and
-                timely services guarantee consistent quality. <br />
-                <b>Customer Satisfaction</b>: We focus on understanding customer
-                needs and delivering tailored solutions that exceed
-                expectations.
+                <b>Trust</b>: We value transparency, honesty, and integrity,
+                ensuring that our customers can depend on us for every rental
+                and leasing experience. <br />
+                <br />
+                <b>Reliability</b>: Our trailers are well-maintained, and our
+                services are timely, ensuring that our customers can rely on us
+                for consistent quality. <br />
+                <br />
+                <b>Customer Satisfaction</b>: We are committed to understanding
+                the needs of our customers and providing tailored solutions that
+                exceed expectations. <br />
+                <br />
+                <b>Community Support</b>: We believe in giving back to the
+                communities that support us by providing affordable solutions
+                and contributing to local initiatives.
               </p>
             </motion.div>
           </div>
@@ -64,7 +75,7 @@ export default function InfoSection() {
             transition={{ duration: 0.6 }}
             className="relative text-white overflow-hidden rounded-xl flex flex-col justify-center items-center p-8"
             style={{
-              backgroundImage: "url('/assets/images/hero.jpg')",
+              backgroundImage: "url('/assets/images/trailer_3.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}

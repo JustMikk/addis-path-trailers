@@ -8,7 +8,7 @@ export default function Contact() {
     <div>
       <section className="relative h-[60vh] flex items-center justify-center">
         <Image
-          src="/assets/images/truck-2.jpg"
+          src="/assets/images/trailers.png"
           alt="contact background"
           layout="fill"
           objectFit="cover"
@@ -25,6 +25,21 @@ export default function Contact() {
           </motion.h1>
         </div>
       </section>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="container mx-auto px-4 py-12"
+      >
+        <h3 className="text-lg md:text-xl font-light text-gray-80000 mb-4">
+          At <span className="text-blue-600 font-semibold">Addis Path</span>, we
+          are here to provide the dry van trailer rental and leasing solutions
+          your business needs. Whether you have a question, need a quote, or
+          want to learn more about our services, contact us through any of the
+          following:
+        </h3>
+      </motion.div>
       <ContactForm />
       <section className="py-16 bg-primary-100">
         <div className="container mx-auto px-4 text-center">

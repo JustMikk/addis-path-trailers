@@ -168,7 +168,7 @@ export function ContactForm() {
           <Card
             className="relative text-white bg-black overflow-hidden"
             style={{
-              backgroundImage: "url('/assets/images/hero.jpg')",
+              backgroundImage: "url('/assets/images/trailer_3.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}

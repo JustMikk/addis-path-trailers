@@ -8,7 +8,7 @@ const HeroSection = () => {
     <section
       className="relative text-left  overflow-hidden"
       style={{
-        backgroundImage: "url('/assets/images/hero.jpg')",
+        backgroundImage: "url('/assets/images/trailer_3.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -32,7 +32,7 @@ const HeroSection = () => {
             transition={{ delay: 0.2, duration: 0.8 }}
           >
             Reliable Dry Van Trailer
-            <span className="text-blue-400">Rental and Leasing</span> Solutions
+            <span className="text-blue-400"> Rental and Leasing</span> Solutions
           </motion.h1>
           <motion.p
             className="text-md md:text-lg lg:text-xl mb-4 text-blue-200 font-semibold"

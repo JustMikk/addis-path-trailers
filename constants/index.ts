@@ -62,15 +62,13 @@ const Content: {
     icon: Truck,
   },
   {
-    title: "Versatile Container Sizes",
-    description: ["Choose from 28’, 40’, or 53’ to fit your load perfectly."],
+    title: "Top Quality Equipment",
+    description: ["Well-maintained trailers you can depend on."],
     icon: Box,
   },
   {
-    title: "Convenient Access Features",
-    description: [
-      "Roll-up or swing doors for effortless loading and unloading.",
-    ],
+    title: "Exceptional Support",
+    description: ["A dedicated team ready to assist every step of the way."],
     icon: CornerDownLeft,
   },
 ];

@@ -13,7 +13,7 @@ export function Banner() {
     >
       <div className="absolute inset-0 z-0">
         <Image
-          src="/assets/images/about.jpg"
+          src="/assets/images/trailer-20.png"
           alt="Banner Background"
           fill
           className="object-cover"
