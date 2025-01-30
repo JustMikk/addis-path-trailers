@@ -12,7 +12,7 @@ export default function Services() {
     <div className="min-h-screen bg-blue-50">
       <section className="relative h-[60vh] flex items-center justify-center">
         <Image
-          src="/assets/images/trailers.png"
+          src="/assets/images/trailer-02.png"
           alt="Hero background"
           layout="fill"
           objectFit="cover"

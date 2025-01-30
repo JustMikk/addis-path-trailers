@@ -170,7 +170,7 @@ export function OurService() {
           <motion.div variants={imageVariants} className="relative">
             <div className="relative rounded-md overflow-hidden shadow-xl">
               <Image
-                src="/assets/images/trailers.png"
+                src="/assets/images/hero.png"
                 alt="Our services in action"
                 width={800}
                 height={600}

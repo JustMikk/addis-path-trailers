@@ -8,7 +8,7 @@ export default function Contact() {
     <div>
       <section className="relative h-[60vh] flex items-center justify-center">
         <Image
-          src="/assets/images/trailers.png"
+          src="/assets/images/trailer-02.png"
           alt="contact background"
           layout="fill"
           objectFit="cover"

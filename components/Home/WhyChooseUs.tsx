@@ -46,7 +46,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
           >
             <Image
-              src="/assets/images/trailer-11.png"
+              src="/assets/images/trailer-20.png"
               alt="Dry Van Semi-Trailers"
               fill
               className="object-cover"

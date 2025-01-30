@@ -8,7 +8,7 @@ const HeroSection = () => {
     <section
       className="relative text-left  overflow-hidden"
       style={{
-        backgroundImage: "url('/assets/images/trailer_3.jpg')",
+        backgroundImage: "url('/assets/images/hero.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

@@ -26,9 +26,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 const formSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters"),
+  firstName: z.string().min(2, "Name must be at least 2 characters"),
+  lastName: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Invalid email address"),
-  subject: z.string().min(5, "Subject must be at least 5 characters"),
   phone: z.string().min(10, "Please enter a valid phone number"),
   message: z.string().min(10, "Message must be at least 10 characters"),
 });
@@ -37,9 +37,9 @@ export function ContactForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      name: "",
+      firstName: "",
+      lastName: "",
       email: "",
-      subject: "",
       phone: "",
       message: "",
     },
@@ -68,14 +68,14 @@ export function ContactForm() {
                 <div className="grid md:grid-cols-2 gap-6">
                   <FormField
                     control={form.control}
-                    name="name"
+                    name="firstName"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Your Name *</FormLabel>
+                        <FormLabel>Your First Name *</FormLabel>
                         <FormControl>
                           <Input
                             className="bg-blue-50 border-blue-500/30 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
-                            placeholder="Your name here"
+                            placeholder="Your first name here"
                             {...field}
                           />
                         </FormControl>
@@ -86,14 +86,14 @@ export function ContactForm() {
 
                   <FormField
                     control={form.control}
-                    name="email"
+                    name="lastName"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Your Email *</FormLabel>
+                        <FormLabel>Your Last Name *</FormLabel>
                         <FormControl>
                           <Input
                             className="bg-blue-50 border-blue-500/30 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
-                            placeholder="Your email here"
+                            placeholder="Your last name here"
                             {...field}
                           />
                         </FormControl>
@@ -106,14 +106,14 @@ export function ContactForm() {
                 <div className="grid md:grid-cols-2 gap-6">
                   <FormField
                     control={form.control}
-                    name="subject"
+                    name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Your Subject *</FormLabel>
+                        <FormLabel>Your Email *</FormLabel>
                         <FormControl>
                           <Input
                             className="bg-blue-50 border-blue-500/30 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
-                            placeholder="Your subject here"
+                            placeholder="Your email here"
                             {...field}
                           />
                         </FormControl>
@@ -168,7 +168,7 @@ export function ContactForm() {
           <Card
             className="relative text-white bg-black overflow-hidden"
             style={{
-              backgroundImage: "url('/assets/images/trailer_3.jpg')",
+              backgroundImage: "url('/assets/images/trailers-2.png')",
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}

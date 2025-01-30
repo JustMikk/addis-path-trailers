@@ -13,14 +13,14 @@ const AboutAddis: React.FC = () => {
         >
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="/assets/images/trailer-19.png"
+              src="/assets/images/trailers.png"
               alt="Professional team"
               width={700}
               height={500}
               className="rounded-xl shadow-xl h-full object-cover hover:scale-105 transition-transform duration-300"
             />
             <Image
-              src="/assets/images/trailer-11.png"
+              src="/assets/images/trailer-20.png"
               alt="Business operations"
               width={700}
               height={500}
