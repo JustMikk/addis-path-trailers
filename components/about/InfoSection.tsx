@@ -86,7 +86,7 @@ export default function InfoSection() {
                 Our Mission, Vision, and Values
               </h2>
               <p className="text-gray-300 mb-8">
-                At AddisPath, our mission is to provide exceptional rental
+                At Addis Path, our mission is to provide exceptional rental
                 services that exceed customer expectations. Our vision is to be
                 the leading rental service provider known for our reliability
                 and customer-centric approach. We value integrity, excellence,

@@ -63,7 +63,7 @@ const AboutSection = () => {
               viewport={{ once: true }}
             >
               <h1 className="text-3xl md:text-4xl font-extrabold mb-4 text-gray-800">
-                About <span className="text-blue-600">AddisPath</span>
+                About <span className="text-blue-600">Addis Path</span>
               </h1>
               <h2 className="text-xl md:text-2xl font-medium text-gray-600 mb-4">
                 Customer-Oriented, Focused on Excellence
@@ -77,7 +77,7 @@ const AboutSection = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              AddisPath is a family owned business dedicated to providing
+              Addis Path is a family owned business dedicated to providing
               high-quality trailer rental and leasing services. We specialize in
               versatile and cost-effective{" "}
               <strong>dry van semi-trailers</strong>, offering tailored

@@ -34,8 +34,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "Info@AddisPathTrailer.com",
-    href: "mailto:Info@AddisPathTrailer.com",
+    value: "Info@addispathtrailer.com",
+    href: "mailto:Info@addispathtrailer.com",
   },
   {
     icon: Phone,
