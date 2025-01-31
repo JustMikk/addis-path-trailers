@@ -52,7 +52,13 @@ const contactInfo = [
   {
     icon: Clock,
     label: "Hours",
-    value: "Mon - Fri: 8:00 AM - 6:00 PM",
+    value: (
+      <>
+        Mon - Fri: 8:00 AM - 5:00 PM
+        <br />
+        Sat: 9:00 AM - 1:00 PM
+      </>
+    ),
   },
 ];
 
@@ -80,8 +86,8 @@ const Footer = () => {
             </div>
             <p className="text-gray-300 leading-relaxed">
               Your trusted partner in dry van trailer rental and leasing
-              services. Providing reliable solutions for your transportation
-              needs since 2010.
+              services. Providing reliable and flexible solutions for your
+              transportation needs.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (
