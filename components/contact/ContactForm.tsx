@@ -71,11 +71,11 @@ export function ContactForm() {
                     name="firstName"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Your First Name *</FormLabel>
+                        <FormLabel>First Name *</FormLabel>
                         <FormControl>
                           <Input
                             className="bg-blue-50 border-blue-500/30 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
-                            placeholder="Your first name here"
+                            placeholder="first name here"
                             {...field}
                           />
                         </FormControl>
@@ -89,11 +89,11 @@ export function ContactForm() {
                     name="lastName"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Your Last Name *</FormLabel>
+                        <FormLabel>Last Name *</FormLabel>
                         <FormControl>
                           <Input
                             className="bg-blue-50 border-blue-500/30 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
-                            placeholder="Your last name here"
+                            placeholder="last name here"
                             {...field}
                           />
                         </FormControl>
@@ -109,11 +109,11 @@ export function ContactForm() {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Your Email *</FormLabel>
+                        <FormLabel>Email *</FormLabel>
                         <FormControl>
                           <Input
                             className="bg-blue-50 border-blue-500/30 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
-                            placeholder="Your email here"
+                            placeholder="email here"
                             {...field}
                           />
                         </FormControl>
@@ -127,11 +127,11 @@ export function ContactForm() {
                     name="phone"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Contact Number</FormLabel>
+                        <FormLabel>Phone Number</FormLabel>
                         <FormControl>
                           <Input
                             className="bg-blue-50 border-blue-500/30 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
-                            placeholder="Your phone number here"
+                            placeholder="phone number here"
                             {...field}
                           />
                         </FormControl>

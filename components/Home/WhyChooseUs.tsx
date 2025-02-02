@@ -84,11 +84,11 @@ const AboutSection = () => {
               viewport={{ once: true }}
             >
               Addis Path is a family owned business dedicated to providing
-              high-quality trailer rental and leasing services. We specialize in
-              versatile and cost-effective{" "}
-              <strong>dry van semi-trailers</strong>, offering tailored
-              solutions to meet the diverse transport and storage needs of
-              individuals and businesses alike.
+              high-quality trailer rental and leasing services with a focus on
+              <strong> dry vans semi trailer.</strong> We specialize in offering
+              versatile and cost-effective dry van trailer rental and leasing
+              solutions tailored to meet the diverse transport and storage needs
+              of individuals and businesses alike.
             </motion.p>
 
             <motion.div

@@ -99,17 +99,18 @@ export function Header() {
               </div>
               <nav className="space-y-6">
                 {navLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className={`block text-lg font-medium hover:text-blue-600 ${
-                      pathname === link.href
-                        ? "text-blue-600 font-semibold"
-                        : ""
-                    }`}
-                  >
-                    {link.label}
-                  </Link>
+                  <SheetTrigger asChild key={link.href}>
+                    <Link
+                      href={link.href}
+                      className={`block text-lg font-medium hover:text-blue-600 ${
+                        pathname === link.href
+                          ? "text-blue-600 font-semibold"
+                          : ""
+                      }`}
+                    >
+                      {link.label}
+                    </Link>
+                  </SheetTrigger>
                 ))}
               </nav>
             </SheetContent>

@@ -34,12 +34,12 @@ export default function InfoSection() {
               </h3>
               <p className="text-gray-600">
                 Our goal is to become the leading provider of trailer rentals
-                and leasing in the Southeastern United States, offering
-                exceptional service, innovative solutions, and a
-                customer-focused approach that distinguishes us from
-                competitors. We strive to build long-lasting relationships with
-                our clients and continuously expand our reach while maintaining
-                the highest standards of service.
+                and leasing in the United States, offering exceptional service,
+                innovative solutions, and a customer-focused approach that
+                distinguishes us from competitors. We strive to build
+                long-lasting relationships with our clients and continuously
+                expand our reach while maintaining the highest standards of
+                service.
               </p>
             </motion.div>
 
@@ -86,11 +86,16 @@ export default function InfoSection() {
                 Our Mission, Vision, and Values
               </h2>
               <p className="text-gray-300 mb-8">
-                At Addis Path, our mission is to provide exceptional rental
-                services that exceed customer expectations. Our vision is to be
-                the leading rental service provider known for our reliability
-                and customer-centric approach. We value integrity, excellence,
-                and a commitment to continuous improvement in all that we do.
+                At Addis Path, our mission is to provide cost-effective,
+                reliable, and high-quality dry van trailer rental and leasing
+                services while promoting sustainability and local economic
+                growth. Our vision is to be the leading trailer rental provider
+                in the United States, known for exceptional service, innovation,
+                and a strong customer focus that builds lasting relationships.
+                We value trust, reliability, customer satisfaction, and
+                community support, ensuring transparency, well-maintained
+                equipment, tailored solutions, and meaningful contributions to
+                the communities we serve.
               </p>
               <Button
                 variant="secondary"
