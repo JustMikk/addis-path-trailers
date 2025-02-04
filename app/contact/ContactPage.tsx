@@ -4,9 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ContactForm } from "@/components/contact/ContactForm";
 
-type Props = {};
-
-export default function ContactPage({}: Props) {
+export default function ContactPage() {
   return (
     <div>
       <section className="relative h-[60vh] flex items-center justify-center">

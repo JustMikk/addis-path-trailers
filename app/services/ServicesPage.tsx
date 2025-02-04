@@ -7,9 +7,7 @@ import WeServeSection from "@/components/services/WeServeSection";
 import { FeaturesSection } from "@/components/services/FeatureServices";
 import { Banner } from "@/components/common/Banner";
 
-type Props = {};
-
-export default function ServicesPage({}: Props) {
+export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-blue-50">
       <section className="relative h-[60vh] flex items-center justify-center">

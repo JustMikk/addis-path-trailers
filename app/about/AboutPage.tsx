@@ -6,9 +6,7 @@ import AboutSection from "@/components/about/AboutUs";
 import InfoSection from "@/components/about/InfoSection";
 import AboutAddis from "@/components/about/AboutAddis";
 
-type Props = {};
-
-export default function AboutPage({}: Props) {
+export default function AboutPage() {
   return (
     <div className="min-h-screen bg-blue-50">
       <section className="relative h-[60vh] flex items-center justify-center">
