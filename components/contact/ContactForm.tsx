@@ -200,7 +200,7 @@ export function ContactForm() {
                     <div>
                       <h3 className="font-bold mb-2">Email Address</h3>
                       <p className="text-gray-300">
-                        info@adddispathtrailers.com
+                        info@addispathtrailers.com
                       </p>
                       {/* <p className="text-gray-300">contact@addisPath.com</p> */}
                     </div>
