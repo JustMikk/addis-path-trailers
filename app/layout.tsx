@@ -16,7 +16,8 @@ export const metadata = {
   description: "Reliable Dry Van Trailer Rental & Leasing Services",
   openGraph: {
     title: "Addis Path Trailer Leasing",
-    description: "Reliable Dry Van Trailer Rental & Leasing Services",
+    description:
+      "At Addis Path, we specialize in providing high-quality dry van semi-trailer rental and leasing services tailored to meet the unique businesses needs across various industries.",
     type: "website",
     locale: "en_US",
     url: "https://addis-path-trailers.vercel.app",

@@ -23,7 +23,7 @@ export const services = [
     icon: Plane,
     description:
       "We collaborate with logistics companies, and other carriers, to provide reliable trailers that expand fleet capacity without the long-term cost of ownership. Our flexible leasing terms ensure you can meet delivery commitments on time.",
-    image: "/assets/images/logistics.png",
+    image: "/assets/images/logistics.jpg",
   },
   {
     id: "03",
@@ -31,7 +31,7 @@ export const services = [
     icon: Ship,
     description:
       "From raw materials to finished goods, we provide secure and durable dry van trailers for storing and transporting products efficiently. Our services help manufacturers focus on production without worrying about logistics equipment.",
-    image: "/assets/images/manufacturing.png",
+    image: "/assets/images/manufacture.jpg",
   },
   {
     id: "04",
@@ -47,7 +47,7 @@ export const services = [
     icon: Truck,
     description:
       "For builders and suppliers, our dry van trailers provide secure, weatherproof storage for construction materials, tools, and equipment. We help you keep your supplies safe and accessible on or off the job site.",
-    image: "/assets/images/construction.png",
+    image: "/assets/images/construction.jpg",
   },
 ];
 
