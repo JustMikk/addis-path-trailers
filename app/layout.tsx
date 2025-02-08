@@ -3,6 +3,7 @@ import "./globals.css";
 
 import Footer from "@/components/common/Footer";
 import { Space_Grotesk } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 
 const space = Space_Grotesk({
   subsets: ["latin"],
@@ -45,6 +46,7 @@ export default function RootLayout({
           <Header />
           <main>{children}</main>
           <Footer />
+          <Toaster />
         </div>
       </body>
     </html>

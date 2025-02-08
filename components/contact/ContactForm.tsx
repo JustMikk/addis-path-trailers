@@ -24,6 +24,8 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import axios from "axios";
+import { toast } from "react-hot-toast";
 
 const formSchema = z.object({
   firstName: z.string().min(2, "Name must be at least 2 characters"),
@@ -45,8 +47,45 @@ export function ContactForm() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  const toast_error = (message: string) =>
+    toast.error(message, {
+      duration: 8000,
+      position: "bottom-right",
+      style: { padding: "16px", border: "1px solid grey" },
+    });
+
+  const toast_success = (message: string) =>
+    toast.success(message, {
+      duration: 8000,
+      position: "bottom-right",
+      style: { padding: "16px", border: "1px solid grey" },
+    });
+
+  async function onSubmit(data: z.infer<typeof formSchema>) {
+    try {
+      const res = await axios.post("/api/sendEmail", {
+        body: data,
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+      });
+
+      if (res.status == 200) {
+        toast_success(
+          "We've received your message and will get back to you soon."
+        );
+        form.reset();
+      } else {
+        toast_error(
+          "An error occurred while sending your message. Please try again later."
+        );
+      }
+    } catch (error) {
+      toast_error(
+        "An error occurred while sending your message. Please try again later."
+      );
+    }
   }
 
   return (
@@ -159,8 +198,12 @@ export function ContactForm() {
                   )}
                 />
 
-                <Button type="submit" className="bg-blue-500 hover:bg-blue-600">
-                  SEND MESSAGE
+                <Button
+                  disabled={form.formState.isSubmitting}
+                  type="submit"
+                  className="bg-blue-500 hover:bg-blue-600"
+                >
+                  {form.formState.isSubmitting ? "SENDING..." : "SEND MESSAGE"}
                 </Button>
               </form>
             </Form>

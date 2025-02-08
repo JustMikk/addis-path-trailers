@@ -39,7 +39,7 @@ export const services = [
     icon: Truck,
     description:
       "Our dry van trailers are perfect for non-refrigerated food items and beverages, ensuring safe and dry storage for transport or temporary holding. We provide cost-effective solutions for food suppliers and distributors.",
-    image: "/assets/images/food-transport.jpg",
+    image: "/assets/images/food.png",
   },
   {
     id: "05",
