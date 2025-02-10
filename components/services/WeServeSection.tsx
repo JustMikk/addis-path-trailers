@@ -14,7 +14,7 @@ const WeServeSection = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-left mb-12"
         >
-          <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 mb-6">
+          <h2 className="text-3xl lg:text-4xl font-extrabold tracking-tight text-gray-900 mb-6">
             Industries <span className="text-blue-600">We Serve</span>
           </h2>
           <p className="text-gray-700 text-lg max-w-3xl">

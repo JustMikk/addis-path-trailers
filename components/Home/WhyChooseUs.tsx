@@ -48,6 +48,7 @@ const AboutSection = () => {
             <Image
               src="/assets/images/trailer-20.png"
               alt="Dry Van Semi-Trailers"
+              sizes="100%"
               fill
               className="object-cover"
             />

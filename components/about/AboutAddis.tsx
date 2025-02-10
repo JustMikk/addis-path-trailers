@@ -11,7 +11,7 @@ const AboutAddis: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols gap-4">
             <Image
               src="/assets/images/trailers.png"
               alt="Professional team"
@@ -36,7 +36,7 @@ const AboutAddis: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           <div>
-            <h2 className="text-4xl font-extrabold leading-snug text-blue-600">
+            <h2 className="text-3xl lg:text-4xl font-extrabold leading-snug text-blue-600">
               Our Team
             </h2>
             <p className="mt-4 text-lg text-gray-600">
@@ -49,7 +49,7 @@ const AboutAddis: React.FC = () => {
           </div>
 
           <div>
-            <h2 className="text-4xl font-extrabold leading-snug text-blue-600">
+            <h2 className="text-3xl lg:text-4xl font-extrabold leading-snug text-blue-600">
               Who We Are
             </h2>
             <p className="mt-4 text-lg text-gray-600">
@@ -62,7 +62,7 @@ const AboutAddis: React.FC = () => {
           </div>
 
           <div>
-            <h2 className="text-4xl font-extrabold leading-snug text-blue-600">
+            <h2 className="text-3xl lg:text-4xl font-extrabold leading-snug text-blue-600">
               Why Work With Us?
             </h2>
             <p className="mt-4 text-lg text-gray-600">

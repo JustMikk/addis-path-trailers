@@ -54,7 +54,7 @@ export function Header() {
               />
             ) : (
               <Image
-                src="/logo.png"
+                src="/assets/images/logo.png"
                 alt="Logo"
                 width={200}
                 height={200}

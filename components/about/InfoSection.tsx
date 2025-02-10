@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function InfoSection() {
   return (
@@ -98,10 +99,11 @@ export default function InfoSection() {
                 the communities we serve.
               </p>
               <Button
+                asChild
                 variant="secondary"
                 className="bg-blue-600 hover:bg-[#A33A1B] text-white border-none"
               >
-                Contact Us
+                <Link href="/contact">Contact Us</Link>
               </Button>
             </div>
           </motion.div>

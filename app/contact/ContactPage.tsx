@@ -11,8 +11,8 @@ export default function ContactPage() {
         <Image
           src="/assets/images/trailer-02.png"
           alt="contact background"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: "cover" }}
           className="brightness-50"
         />
         <div className="relative z-10 text-center text-white">

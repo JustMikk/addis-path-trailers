@@ -14,27 +14,19 @@ export default function ServicesPage() {
         <Image
           src="/assets/images/trailer-02.png"
           alt="Hero background"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: "cover" }}
           className="brightness-50"
         />
         <div className="relative z-10 text-center text-white">
           <motion.h1
-            className="text-5xl font-bold mb-4"
+            className="text-4xl lg:text-5xl font-bold mb-4"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
             Our Reliable Trailer Rental & Leasing Services
           </motion.h1>
-          {/* <motion.p
-          className="text-xl"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          We provide a range of services to meet your needs
-        </motion.p> */}
         </div>
       </section>
 
@@ -46,7 +38,7 @@ export default function ServicesPage() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-left mb-12"
           >
-            <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 mb-6">
+            <h2 className="text-3xl lg:text-4xl font-extrabold tracking-tight text-gray-900 mb-6">
               Check out our extensive range of{" "}
               <span className="text-blue-600">
                 trailer rental and leasing solutions

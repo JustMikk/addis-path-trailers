@@ -26,6 +26,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import axios from "axios";
 import { toast } from "react-hot-toast";
+import emailjs from "@emailjs/browser";
 
 const formSchema = z.object({
   firstName: z.string().min(2, "Name must be at least 2 characters"),
@@ -63,15 +64,22 @@ export function ContactForm() {
 
   async function onSubmit(data: z.infer<typeof formSchema>) {
     try {
-      const res = await axios.post("/api/sendEmail", {
-        body: data,
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-      });
+      const templateParams = {
+        first_name: data.firstName,
+        last_name: data.lastName,
+        from_email: data.email,
+        from_phone: data.phone,
+        message: data.message,
+      };
 
-      if (res.status == 200) {
+      const result = await emailjs.send(
+        "service_4d38grk",
+        "template_qko39cm",
+        templateParams,
+        "fPkNV9-NpgxFlm8L_"
+      );
+
+      if (result.status === 200) {
         toast_success(
           "We've received your message and will get back to you soon."
         );
@@ -82,6 +90,7 @@ export function ContactForm() {
         );
       }
     } catch (error) {
+      console.error(error);
       toast_error(
         "An error occurred while sending your message. Please try again later."
       );

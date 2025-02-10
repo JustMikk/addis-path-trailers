@@ -96,7 +96,7 @@ export function OurService() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6 tracking-tight flex"
+            className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-6 tracking-tight flex"
           >
             {" "}
             <ArrowBigRight className="h-8 w-8 text-blue-600 mr-3" />

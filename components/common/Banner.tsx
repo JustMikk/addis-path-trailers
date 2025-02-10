@@ -14,6 +14,7 @@ export function Banner() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/assets/images/trailer-20.png"
+          sizes="100%"
           alt="Banner Background"
           fill
           className="object-cover"
@@ -32,13 +33,13 @@ export function Banner() {
           viewport={{ once: true }}
           className="relative z-10 px-4 sm:px-6 lg:px-8"
         >
-          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+          <h1 className="text-2xl lg:text-4xl font-bold text-white mb-6">
             Your Trusted Partner in{" "}
             <span className="text-blue-400">
               Transport and Storage Solutions
             </span>
           </h1>
-          <p className="text-lg sm:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg lg:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
             We provide secure, reliable, and versatile dry van semi-trailers for
             all your cargo and storage needs. Let us help you streamline your
             operations today.

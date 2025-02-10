@@ -34,7 +34,7 @@ export function FeaturesSection() {
     <section className="py-16 bg-white">
       <div className="container mx-auto p-6 px-4 md:px-12 lg:px-16 lg:max-w-[1440px]">
         <motion.h2
-          className="text-4xl font-bold mb-12 text-left text-gray-900"
+          className="text-3xl lg:text-4xl font-bold mb-12 text-left text-gray-900"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
