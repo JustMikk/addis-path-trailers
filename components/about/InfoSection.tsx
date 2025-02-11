@@ -76,7 +76,7 @@ export default function InfoSection() {
             transition={{ duration: 0.6 }}
             className="relative text-white overflow-hidden rounded-xl flex flex-col justify-center items-center p-8"
             style={{
-              backgroundImage: "url('/assets/images/trailers-2.png')",
+              backgroundImage: "url('/images/trailers-2.png')",
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}

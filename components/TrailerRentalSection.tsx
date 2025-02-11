@@ -15,7 +15,7 @@ const cards = [
     ],
     details:
       "Flexible short-term and long-term rental options to suit your needs. Available sizes: 28’, 40’, and 53’ with roll-up or swing doors for easy loading and unloading.",
-    image: "assets/images/dry-van.jpg",
+    image: "/images/dry-van.jpg",
   },
   {
     title: "Refrigerated Trailers",
@@ -26,7 +26,7 @@ const cards = [
     ],
     details:
       "Available in various sizes with flexible leasing plans to meet your operational demands.",
-    image: "assets/images/van1.jpg",
+    image: "/images/van1.jpg",
   },
   {
     title: "Flatbed Trailers",
@@ -37,7 +37,7 @@ const cards = [
     ],
     details:
       "Designed for a wide range of industries with short-term and long-term rental solutions.",
-    image: "assets/images/flatbed-trailer.jpg",
+    image: "/images/flatbed-trailer.jpg",
   },
 ];
 

@@ -2,17 +2,26 @@ import { ChevronRight } from "lucide-react";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import ExportedImage from "next-image-export-optimizer";
 
 const HeroSection = () => {
   return (
     <section
       className="relative text-left  overflow-hidden"
-      style={{
-        backgroundImage: "url('/assets/images/hero.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      // style={{
+      //   backgroundImage: "url('/images/hero.png')",
+      //   backgroundSize: "cover",
+      //   backgroundPosition: "center",
+      // }}
     >
+      <ExportedImage
+        src="/images/hero.png"
+        alt="Hero background"
+        fill
+        // priority
+        loading="lazy"
+        style={{ objectFit: "cover" }}
+      />
       <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
       <div className="absolute inset-0 bg-gradient-to-br from-blue-700/50 via-black/50 to-black/70"></div>

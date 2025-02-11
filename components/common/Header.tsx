@@ -7,6 +7,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Phone } from "lucide-react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import ExportedImage from "next-image-export-optimizer";
 
 export function Header() {
   const pathname = usePathname();
@@ -45,16 +46,16 @@ export function Header() {
         <div className=" flex h-16 items-center justify-between ">
           <Link href="/" className="flex items-center">
             {isScrolled ? (
-              <Image
-                src="/assets/images/logo-sticker.png"
+              <ExportedImage
+                src="/images/logo-sticker.png"
                 alt="Logo"
                 width={200}
                 height={200}
                 className="h-24 w-24 md:h-28 md:w-28"
               />
             ) : (
-              <Image
-                src="/assets/images/logo.png"
+              <ExportedImage
+                src="/images/logo.png"
                 alt="Logo"
                 width={200}
                 height={200}
@@ -89,8 +90,8 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="left" className="p-6">
               <div className="flex items-center justify-between mb-6">
-                <Image
-                  src="/assets/images/logo-sticker.png"
+                <ExportedImage
+                  src="/images/logo-sticker.png"
                   alt="Logo"
                   width={200}
                   height={200}

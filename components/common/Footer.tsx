@@ -15,6 +15,7 @@ import {
 
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 const quickLinks = [
   { name: "Home", href: "/" },
@@ -76,11 +77,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="space-y-4">
             <div>
-              <Image
-                src="/assets/images/logo.png"
+              <ExportedImage
+                src="/images/logo.png"
                 alt="Logo"
                 width={200}
                 height={200}
+                // priority
+                loading="lazy"
                 className="h-24 w-24 md:h-28 md:w-28"
               />
             </div>

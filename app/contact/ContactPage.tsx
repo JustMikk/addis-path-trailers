@@ -3,15 +3,18 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { ContactForm } from "@/components/contact/ContactForm";
+import ExportedImage from "next-image-export-optimizer";
 
 export default function ContactPage() {
   return (
     <div>
       <section className="relative h-[60vh] flex items-center justify-center">
-        <Image
-          src="/assets/images/trailer-02.png"
+        <ExportedImage
+          src="/images/trailer-02.png"
           alt="contact background"
           fill
+          // priority
+          loading="lazy"
           style={{ objectFit: "cover" }}
           className="brightness-50"
         />

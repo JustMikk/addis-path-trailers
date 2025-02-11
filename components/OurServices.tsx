@@ -9,6 +9,7 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
+import ExportedImage from "next-image-export-optimizer";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -169,11 +170,13 @@ export function OurService() {
 
           <motion.div variants={imageVariants} className="relative">
             <div className="relative rounded-md overflow-hidden shadow-xl">
-              <Image
-                src="/assets/images/hero.png"
+              <ExportedImage
+                src="/images/hero.png"
                 alt="Our services in action"
                 width={800}
                 height={600}
+                // priority
+                loading="lazy"
                 className="w-full h-[400px] sm:h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />

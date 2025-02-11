@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 const AboutAddis: React.FC = () => {
   return (
@@ -11,19 +12,23 @@ const AboutAddis: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="grid grid-cols gap-4">
-            <Image
-              src="/assets/images/trailers.png"
+          <div className="grid grid-cols-2 gap-4">
+            <ExportedImage
+              src="/images/trailers.png"
               alt="Professional team"
               width={700}
               height={500}
+              // priority
+              loading="lazy"
               className="rounded-xl shadow-xl h-full object-cover hover:scale-105 transition-transform duration-300"
             />
-            <Image
-              src="/assets/images/trailer-20.png"
+            <ExportedImage
+              src="/images/trailer-20.png"
               alt="Business operations"
               width={700}
               height={500}
+              // priority
+              loading="lazy"
               className="rounded-xl shadow-xl mt-6 md:mt-8 h-full object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>

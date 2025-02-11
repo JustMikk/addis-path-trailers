@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import Image from "next/image";
 import type { LucideIcon } from "lucide-react";
 import Link from "next/link";
+import ExportedImage from "next-image-export-optimizer";
 
 interface ServiceCardProps {
   id: string;
@@ -20,10 +21,12 @@ export function ServiceCard({
 }: ServiceCardProps) {
   return (
     <Card className="group relative overflow-hidden h-[400px] min-w-[300px] flex-shrink-0 cursor-pointer">
-      <Image
+      <ExportedImage
         src={image || "/placeholder.svg"}
         alt={title}
         fill
+        // priority
+        loading="lazy"
         className="object-cover transition-transform group-hover:scale-105"
       />
       <div className="absolute inset-0 bg-black/30 transition-opacity group-hover:bg-gray-900/80" />

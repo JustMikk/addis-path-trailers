@@ -12,9 +12,11 @@ export default function AboutPage() {
     <div className="min-h-screen bg-blue-50">
       <section className="relative h-[60vh] flex items-center justify-center">
         <ExportedImage
-          src="/assets/images/trailer-02.png"
+          src="/images/trailer-02.png"
           alt="Hero background"
           fill
+          // priority
+          loading="lazy"
           style={{ objectFit: "cover" }}
           className="brightness-50"
         />

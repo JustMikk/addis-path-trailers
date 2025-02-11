@@ -16,7 +16,7 @@ export const metadata = {
   },
   description: "Reliable Dry Van Trailer Rental & Leasing Services",
   icons: {
-    icon: "/assets/images/og-image.png",
+    icon: "/images/og-image.png",
   },
   openGraph: {
     title: "Addis Path Trailer Leasing",
@@ -28,7 +28,7 @@ export const metadata = {
     site_name: "Addis Path Trailer Leasing",
     images: [
       {
-        url: "https://addispathtrailers.com/assets/images/og-image.png",
+        url: "https://addispathtrailers.com/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Addis Path Trailer Leasing",

@@ -5,6 +5,7 @@ import { TruckIcon, DollarSignIcon, ClockIcon, StoreIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import ExportedImage from "next-image-export-optimizer";
 
 const features = [
   {
@@ -39,10 +40,11 @@ const AboutSection = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <Image
-              src="/assets/images/trailer-20.png"
+            <ExportedImage
+              src="/images/trailer-20.png"
               alt="Dry Van Semi-Trailers"
               sizes="100%"
+              loading="lazy"
               fill
               className="object-cover"
             />

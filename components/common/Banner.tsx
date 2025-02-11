@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import ExportedImage from "next-image-export-optimizer";
 
 export function Banner() {
   return (
@@ -12,13 +13,14 @@ export function Banner() {
       className="relative h-[400px] sm:h-[500px] flex items-center justify-center text-center overflow-hidden"
     >
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/assets/images/trailer-20.png"
+        <ExportedImage
+          src="/images/trailer-20.png"
           sizes="100%"
           alt="Banner Background"
           fill
           className="object-cover"
-          priority
+          loading="lazy"
+          // priority
         />
         <div className="absolute inset-0 bg-black/50" />{" "}
       </div>

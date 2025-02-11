@@ -6,15 +6,18 @@ import { OurService } from "@/components/OurServices";
 import WeServeSection from "@/components/services/WeServeSection";
 import { FeaturesSection } from "@/components/services/FeatureServices";
 import { Banner } from "@/components/common/Banner";
+import ExportedImage from "next-image-export-optimizer";
 
 export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-blue-50">
       <section className="relative h-[60vh] flex items-center justify-center">
-        <Image
-          src="/assets/images/trailer-02.png"
+        <ExportedImage
+          src="/images/trailer-02.png"
           alt="Hero background"
           fill
+          // priority
+          loading="lazy"
           style={{ objectFit: "cover" }}
           className="brightness-50"
         />

@@ -15,7 +15,7 @@ export const services = [
     icon: Building2,
     description:
       "Our trailers support e-commerce giants and retailers by offering scalable leasing options to handle growing demand. Whether it is moving goods between fulfilment centers or managing seasonal inventory spikes, our trailers are ready to meet your needs.",
-    image: "/assets/images/ecommerce.png",
+    image: "/images/ecommerce.png",
   },
   {
     id: "02",
@@ -23,7 +23,7 @@ export const services = [
     icon: Plane,
     description:
       "We collaborate with logistics companies, and other carriers, to provide reliable trailers that expand fleet capacity without the long-term cost of ownership. Our flexible leasing terms ensure you can meet delivery commitments on time.",
-    image: "/assets/images/logistics.jpg",
+    image: "/images/logistics.jpg",
   },
   {
     id: "03",
@@ -31,7 +31,7 @@ export const services = [
     icon: Ship,
     description:
       "From raw materials to finished goods, we provide secure and durable dry van trailers for storing and transporting products efficiently. Our services help manufacturers focus on production without worrying about logistics equipment.",
-    image: "/assets/images/manufacture.jpg",
+    image: "/images/manufacture.jpg",
   },
   {
     id: "04",
@@ -39,7 +39,7 @@ export const services = [
     icon: Truck,
     description:
       "Our dry van trailers are perfect for non-refrigerated food items and beverages, ensuring safe and dry storage for transport or temporary holding. We provide cost-effective solutions for food suppliers and distributors.",
-    image: "/assets/images/food.png",
+    image: "/images/food.png",
   },
   {
     id: "05",
@@ -47,7 +47,7 @@ export const services = [
     icon: Truck,
     description:
       "For builders and suppliers, our dry van trailers provide secure, weatherproof storage for construction materials, tools, and equipment. We help you keep your supplies safe and accessible on or off the job site.",
-    image: "/assets/images/construction.jpg",
+    image: "/images/construction.jpg",
   },
 ];
 
@@ -78,25 +78,25 @@ export const industries = [
     title: "E-Commerce and Retail",
     description:
       "Our trailers support e-commerce giants and retailers by offering scalable leasing options to handle growing demand. Whether it is moving goods between fulfillment centers or managing seasonal inventory spikes, our trailers are ready to meet your needs.",
-    image: "/assets/images/track4.jpg",
+    image: "/images/track4.jpg",
   },
   {
     title: "Logistics and Freight",
     description:
       "We collaborate with logistics companies, and other carriers, to provide reliable trailers that expand fleet capacity without the long-term cost of ownership. Our flexible leasing terms ensure you can meet delivery commitments on time.",
-    image: "/assets/images/track4.jpg",
+    image: "/images/track4.jpg",
   },
   {
     title: "Manufacturing",
     description:
       "From raw materials to finished goods, we provide secure and durable dry van trailers for storing and transporting products efficiently. Our services help manufacturers focus on production without worrying about logistics equipment.",
-    image: "/assets/images/track4.jpg",
+    image: "/images/track4.jpg",
   },
   {
     title: "Food and Beverage",
     description:
       "Our dry van trailers are perfect for non-refrigerated food items and beverages, ensuring safe and dry storage for transport or temporary holding. We provide cost-effective solutions for food suppliers and distributors.",
-    image: "/assets/images/track4.jpg",
+    image: "/images/track4.jpg",
   },
 ];
 export default Content;
