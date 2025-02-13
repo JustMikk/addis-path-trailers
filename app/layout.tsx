@@ -44,6 +44,28 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Addis Path Trailers",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "290 Jackson Place NW",
+                addressLocality: "Lilburn",
+                addressRegion: "GA",
+                postalCode: "30047",
+                addressCountry: "US",
+              },
+              telephone: "+1-414-595-0096",
+              email: "info@addispathtrailers.com",
+            }),
+          }}
+        />
+      </head>
       <body className={space.className}>
         <div className="bg-blue-50">
           <Header />

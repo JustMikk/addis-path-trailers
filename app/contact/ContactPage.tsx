@@ -1,13 +1,34 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ContactForm } from "@/components/contact/ContactForm";
 import ExportedImage from "next-image-export-optimizer";
+import { CustomModal } from "@/components/CustomModal";
 
 export default function ContactPage() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsOpen(true);
+    }, 5000);
+
+    return () => clearTimeout(timer); // Cleanup the timer if the component unmounts
+  }, []);
+
+  const handleClose = () => {
+    setIsOpen(false);
+  };
   return (
     <div>
+      <CustomModal
+        title="Appointments Only"
+        subtitle="Important Notice"
+        body="Rentals are by appointment only. Please call, text, or email us about reserving your rental today."
+        isOpen={isOpen}
+        onClose={handleClose}
+      />
       <section className="relative h-[60vh] flex items-center justify-center">
         <ExportedImage
           src="/images/trailer-02.png"

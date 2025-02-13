@@ -25,7 +25,7 @@ export function ServiceCard({
         src={image || "/placeholder.svg"}
         alt={title}
         fill
-        priority
+        // priority
         loading="lazy"
         className="object-cover transition-transform group-hover:scale-105"
       />

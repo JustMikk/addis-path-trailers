@@ -7,27 +7,40 @@ import AboutSection from "@/components/Home/WhyChooseUs";
 import HeroSection from "@/components/Home/HeroSection";
 import { OurService } from "@/components/OurServices";
 import { Banner } from "@/components/common/Banner";
+import React, { useEffect } from "react";
+import { useDisclosure } from "@mantine/hooks";
+import { Modal, Button } from "@mantine/core";
 
 import { ServiceSection } from "@/components/Home/ServiceSection";
 
 import { ContactForm } from "@/components/contact/ContactForm";
+import { CustomModal } from "@/components/CustomModal";
 
 export default function Home() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? industries.length - 1 : prevIndex - 1
-    );
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsOpen(true);
+    }, 5000);
+
+    return () => clearTimeout(timer); // Cleanup the timer if the component unmounts
+  }, []);
+
+  const handleClose = () => {
+    setIsOpen(false);
   };
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === industries.length - 1 ? 0 : prevIndex + 1
-    );
-  };
   return (
     <div className="relative">
+      <CustomModal
+        title="Appointments Only"
+        subtitle="Important Notice"
+        body="Rentals are by appointment only. Please call, text, or email us about reserving your rental today."
+        isOpen={isOpen}
+        onClose={handleClose}
+      />
+
       <HeroSection />
       <VailableCard />
       <AboutSection />

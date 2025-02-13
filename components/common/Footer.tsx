@@ -1,3 +1,4 @@
+"use client";
 import type React from "react";
 
 import Link from "next/link";
@@ -16,6 +17,10 @@ import {
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 import ExportedImage from "next-image-export-optimizer";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { CustomModal } from "../CustomModal";
+import ReactHtmlParser from "react-html-parser";
 
 const quickLinks = [
   { name: "Home", href: "/" },
@@ -71,6 +76,15 @@ const socialLinks = [
 ];
 
 const Footer = () => {
+  const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
+
+  const handlePrivacyModalOpen = () => {
+    setIsPrivacyModalOpen(true);
+  };
+
+  const handlePrivacyModalClose = () => {
+    setIsPrivacyModalOpen(false);
+  };
   return (
     <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white">
       <div className="container  mx-auto px-4 md:px-12 lg:px-16 lg:max-w-[1440px] py-12">
@@ -184,21 +198,78 @@ const Footer = () => {
             rights reserved.
           </p>
           <div className="flex gap-6">
-            <Link
-              href="/"
+            <Button
+              onClick={handlePrivacyModalOpen}
               className="hover:text-white transition-colors duration-300"
             >
               Privacy Policy
-            </Link>
-            <Link
-              href="/"
-              className="hover:text-white transition-colors duration-300"
-            >
-              Terms of Service
-            </Link>
+            </Button>
           </div>
         </div>
       </div>
+      <CustomModal
+        title="Privacy Policy for Addis Trailer Rentals"
+        subtitle=""
+        body={ReactHtmlParser(`
+          <div>
+            <p>Welcome to Addis Path Trailer Rental and Leasing. Your privacy is important to us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website (www.addispathtrailers.com).</p>
+            <p>By using our Website, you consent to the practices described in this Privacy Policy. If you do not agree, please do not use our Website.</p>
+
+            <h3 class="font-bold mt-4">1. Information We Collect</h3>
+            <p>We collect the following types of information:</p>
+            <h4 class="font-bold mt-2">A. Personal Information</h4>
+            <p>When you interact with us, we may collect personally identifiable information, such as:</p>
+            <ul class="list-disc list-inside ml-4">
+              <li>Name</li>
+              <li>Email address</li>
+              <li>Phone number</li>
+              <li>Business name (if applicable)</li>
+              <li>Any other information you voluntarily provide through contact forms or account registration</li>
+            </ul>
+            <h4 class="font-bold mt-2">B. Non-Personal Information</h4>
+            <p>We may collect non-personal information, including:</p>
+            <ul class="list-disc list-inside ml-4">
+              <li>Browser type and version</li>
+              <li>IP address</li>
+              <li>Device type</li>
+              <li>Website usage data (e.g., pages visited, time spent on pages)</li>
+              <li>Cookies and tracking technologies</li>
+            </ul>
+
+            <h3 class="font-bold mt-4">2. How We Use Your Information</h3>
+            <p>We use the collected information for the following purposes:</p>
+            <ul class="list-disc list-inside ml-4">
+              <li>To provide and manage trailer leasing services</li>
+              <li>To communicate with you regarding inquiries, contracts, and support</li>
+              <li>To improve our Website and services</li>
+              <li>To ensure security and prevent fraud</li>
+              <li>To comply with legal obligations</li>
+            </ul>
+
+            <h3 class="font-bold mt-4">3. How We Share Your Information</h3>
+            <p>We do not sell or rent your personal information. However, we may share your information with:</p>
+            <ul class="list-disc list-inside ml-4">
+              <li>Service Providers: We may share information with third-party providers that help us operate our business, such as payment processors and website hosting services.</li>
+              <li>Legal Compliance: We may disclose information if required by law, court order, or regulatory request.</li>
+              <li>Business Transfers: In case of a business sale, merger, or acquisition, your information may be transferred to the new entity.</li>
+            </ul>
+
+            <h3 class="font-bold mt-4">4. Cookies and Tracking Technologies</h3>
+            <p>We use cookies and similar tracking technologies to enhance your experience on our Website. You can adjust your browser settings to refuse cookies, but some features of the Website may not function properly.</p>
+
+            <h3 class="font-bold mt-4">5. Data Security</h3>
+            <p>We implement industry-standard security measures to protect your personal information. However, no online system is 100% secure, and we cannot guarantee absolute security.</p>
+
+            <h3 class="font-bold mt-4">6. Changes to This Privacy Policy</h3>
+            <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. We encourage you to review this policy periodically.</p>
+
+            <h3 class="font-bold mt-4">7. Contact Us</h3>
+            <p>If you have any questions about this Privacy Policy, please contact us at info@addispathtrailers.com.</p>
+          </div>
+        `)}
+        isOpen={isPrivacyModalOpen}
+        onClose={handlePrivacyModalClose}
+      />
     </footer>
   );
 };
