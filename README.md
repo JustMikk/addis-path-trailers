@@ -12,7 +12,7 @@ This is a **beautifully designed landing page** for a Trailer rental business ba
 
 Here are some screenshots of the landing page:
 
-![Landing Page](https://github.com/JustMikk/addis-path-trailers/demo/demo.png)
+![Landing Page](</demo/demo.png>)
 
 ## ✨ Features
 
