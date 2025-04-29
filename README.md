@@ -7,6 +7,12 @@ This is a **beautifully designed landing page** for a Trailer rental business ba
 
 **Live Demo**: [Restaurant Landing Page](https://addispathtrailers.com/)
 
+## 🖼️ Screenshots
+
+Here are some screenshots of the landing page:
+
+![Landing Page](https://github.com/JustMikk/addis-path-trailers/demo/demo.png)
+
 ## ✨ Features
 
 - **Minimalist Hero Section**: Highlights AddisPath’s vision with strong CTAs.
@@ -63,11 +69,6 @@ To build the app for production, run:
 ```bash
 npm run build
 ```
-## 🖼️ Screenshots
-
-Here are some screenshots of the landing page:
-
-![Landing Page](https://github.com/JustMikk/addis-path-trailers/demo/demo.png)
 
 ## 🌐 Live Demo
 
