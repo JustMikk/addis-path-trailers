@@ -8,8 +8,6 @@ import HeroSection from "@/components/Home/HeroSection";
 import { OurService } from "@/components/OurServices";
 import { Banner } from "@/components/common/Banner";
 import React, { useEffect } from "react";
-import { useDisclosure } from "@mantine/hooks";
-import { Modal, Button } from "@mantine/core";
 
 import { ServiceSection } from "@/components/Home/ServiceSection";
 
