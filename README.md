@@ -3,7 +3,7 @@
 
 ## Overview
 
-This is a **beautifully designed landing page** for a Trailer rental business based in Atlanta,Georgia, built using **Next Js**. It showcases the business' offerings, ambiance, and contact details, providing a seamless user experience. The design is modern, responsive, and visually appealing, ensuring that it looks great on all devices.
+This is a **beautifully designed landing page** for a Trailer rental business based in Atlanta, Georgia, built using **Next Js**. It showcases the business' offerings, ambiance, and contact details, providing a seamless user experience. The design is modern, responsive, and visually appealing, ensuring that it looks great on all devices.
 
 **Live Demo**: Check it out here: [Addis Path Trailers Landing Page ](https://addispathtrailers.com/)
 
